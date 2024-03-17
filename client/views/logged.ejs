@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetProCare</title>
+
+    <link rel="stylesheet" href="logged.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script>
+        // TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com 
+        // Initialization for ES Users
+        import {
+            Carousel,
+            initTE,
+        } from "tw-elements";
+
+        initTE({ Carousel });
+    </script>
+    <script src="text.js"></script>
+</head>
+
+<body class=" bg-opacity-60 cursor-pointer">
+    <div class="flex flex-col justify-around">
+        <!-- Nav bar -->
+        <nav class="flex justify-between  items-center ml-5 mr-5  sm:text-sm md:text-lg lg:text-xl bg-white-400 bg-opacity-50 p-2 rounded-3xl"
+            id="nav">
+            <img src="Images/icon.jpg" class="h-12 object-contain" alt="VetProCare Logo">
+            <!-- <span
+                class="italic bold text-6xl antialiased pl-3 mt-2 font-mono typed-output text-white flex justify-center items-center"
+                id="typed-output">VetProCare</span> -->
+            <div class="flex items-center justify-between mt-2 text-white">
+                <span class="italic text-2xl">Welcome <%= fname %>
+                        <%= lname %>.</span>
+                <form action="/" method="get" >
+                    <button type="submit" class="w-full bg-blue-500 text-2xl text-white p-3 rounded-3xl m-3">SignOut</button>
+                </form>
+            </div>
+        </nav>
+        <div class="flex justify-center items-center text-white text-3xl flex-col">
+            <span
+                class="italic bold text-6xl antialiased pl-3  font-mono typed-output text-white flex justify-center items-center"
+                id="typed-output">VetProCare</span>
+                <sub>Your Partner for Pet Care</sub>
+        </div>
+        <!-- Card Element -->
+        <div class="flex justify-evenly flex-wrap mt-10  ml-50 mr-50 h-5/6 w-100vw">
+            <div class="flex justify-center items-center flex-col">
+                <img src="Images/app_app.jpeg" class="p-4 rounded-3xl">
+                <form action="/logged/appointment" method="get">
+                    <button class="bg-purple-500 text-white w-full p-4 rounded-3xl text-2xl button">Book An
+                        Appointment</button>
+                </form>
+            </div>
+            <div class="flex justify-center items-center flex-col">
+                <img src="Images/app_pet.jpg" class="p-4 w-1/2 h-1/2 rounded-3xl ">
+                <form action="/logged/addpet" method="get">
+                    <button class="bg-purple-500 text-white w-full p-4 rounded-3xl text-2xl button">Add A Pet</button>
+                </form>
+            </div>
+            <div class="flex justify-center items-center flex-col">
+                <img src="Images/status_app.jpeg" class="p-4 rounded-3xl">
+                <form action="/logged/check-status" method="get">
+                    <button class="bg-purple-500 text-white w-full p-4 rounded-3xl text-2xl button">Check
+                        Status</button>
+                </form>
+            </div>
+        </div>
+        <!-- footer -->
+
+    </div>
+
+</body>
+
+</html>

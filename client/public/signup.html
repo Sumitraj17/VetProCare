@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetProCare</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <div class="flex justify-between items-center">
+        <div class="w-1/2 hidden md:block ">
+            <img src="../Images/signup.jpg" class="w-full h-screen">
+        </div>
+        <div class="flex flex-col  items-center w-1/2 ">
+            <div>
+                <h1 class="text-5xl bold italic m-4 mt-2 mb-2">Create an Account</h1>
+            </div>
+            <div class="flex flex-col w-1/2 border botder-gray-300 rounded-lg shadow ">
+                <form method="post" action="/home/sign" class="p-4" >
+                    <div class="mb-4">
+                        <label for="name">First Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required class=" w-5/6 border rounded-3xl border-black-300 p-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="name">Last Name</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required class=" w-5/6 border rounded-3xl border-black-300 p-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Valid Email" required class="w-5/6 border rounded-3xl border-black-300 p-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="number">Phone Number</label><br>
+                        <input type="number" id="number" name="number" placeholder="Valid Phone Number" required class="w-5/6 border rounded-3xl border-black-300 p-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="city">CITY</label><br>
+                        <input type="text" id="city" name="city" placeholder="CITY" required class="w-5/6 border rounded-3xl border-black-300 p-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" name="password" placeholder="........" required class="w-5/6 border rounded-3xl border-black-300 p-2">
+                    </div>
+            
+                    <div class="mb-4">
+                        <label for="confirmPassword">Confirm Password</label><br>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="......." required class="w-5/6 border rounded-3xl border-black-300 p-2">
+                    </div>
+            
+                    <button type="submit" class="border border-black-500 bg-blue-500 p-2 rounded-3xl w-5/6 text-md bold italic">SignUp</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

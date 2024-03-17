@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetProCare</title>
+    <link rel="stylesheet" href="../css/add_pet.css">
+    <!-- <script src="../js/add_pet.js"></script> -->
+</head>
+
+<body>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Register Today</h3>
+                        <p>Fill in the data below.</p>
+                        <form class="requires-validation" action="/logged/petReg" method="post" novalidate>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="petname" placeholder="Pet Name" required>
+
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="breed" placeholder="Pet Breed" required>
+
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select mt-3" required name="type">
+                                    <option selected disabled value="">SPECIES</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="bird">Bird</option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="number" name="age" placeholder="Age" required>
+
+                            </div>
+
+
+                            <div class="col-md-12 mt-3">
+                                <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                                <input type="radio" class="btn-check" name="gender" id="male" value="male" autocomplete="off"
+                                    required>
+                                <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                                <input type="radio" class="btn-check" name="gender" id="female" value="female" autocomplete="off"
+                                    required>
+                                <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label">I confirm that all data are correct</label>
+
+                            </div>
+
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary regbut">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetProCare</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        // TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com 
+        // Initialization for ES Users
+        import {
+            Carousel,
+            initTE,
+        } from "tw-elements";
+
+        initTE({ Carousel });
+    </script>
+</head>
+
+<body class=" bg-opacity-60 cursor-pointer">
+    <!-- Nav bar -->
+    <nav
+        class="flex justify-between ml-5 mr-5 mt-3 sm:text-sm md:text-lg lg:text-xl bg-white-400 bg-opacity-50 p-2 rounded-3xl" id="nav">
+        <img src="Images/icon.jpg" class="h-12 object-contain" alt="VetProCare Logo">
+        <span class="italic bold text-6xl antialiased pl-3 mt-2 font-mono">VetProCare</span>
+        <div class="flex items-center mt-2">
+            <form action="home/login" method="get">
+                <button type="submit" class="p-3 bg-blue-500 rounded-3xl text-white mr-3">Login</button>
+            </form>
+            <form action="home/signup" method="get">
+                <button type="submit" class="p-3 bg-blue-500 rounded-3xl text-white">SignUp</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- Hero element -->
+    <section class=" ml-5 mr-5 mt-3" id="hero">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    Welcome to VetProCare</h1>
+                <p class="max-w-2xl mb-6  text-black lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Welcome to
+                    VetProCare - Your Trusted Veterinary Partner!
+                    Our mission is to provide exceptional care for your furry friends, ensuring their health and
+                    well-being. With VetProCare, you have access to a range of veterinary services designed to meet the
+                    unique needs of your beloved pets.
+                </p>
+
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="Images/logo.jpg" alt="mockup" class="bg-blend-normal	h-1/5  w-5/6 rounded-3xl">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-white rounded-lg shadow m-2 dark:bg-gray-800 ">
+        <div class="w-full mx-auto max-w-screen-xl p-2 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#nav"
+                    class="hover:underline">VetProCare™</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li class="p-2">
+                    <a href="#hero" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li class="p-2">
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li class="p-2">
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li class="p-2">
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

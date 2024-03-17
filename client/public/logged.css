@@ -1,0 +1,50 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Set a large height to make the background extend during scrolling */
+    /* background-image: url('Images/bgimag2.jpg'); Replace with your image path */
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+/* }  */
+/* Basic button styles
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Add a box shadow to simulate a raised effect on hover */
+  /* .button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  } */
+
+/* Basic button styles */
+body{
+  background-color: #152733;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Move the button upwards on hover */
+  .button:hover {
+    transform: translateY(-5px);
+  }
+  

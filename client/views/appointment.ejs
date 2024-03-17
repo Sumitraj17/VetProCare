@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetProCare/Appointment</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+
+<body>
+    <div class="formm">
+
+        <% if(data.length) { %>
+            <form action="/logged/form" method="post">
+                <h1><u>APPOINTMENT FORM:</u></h1>
+                <hr>
+                <h2><u>OWNER DETAILS:</u></h2>
+                <div>NAME : <input type="text" placeholder="name" name="client_name" required></div>
+                <br>
+                <div>EMAIL : <input type="email" placeholder="email" name="client_email" required></div>
+                <br>
+                <div>PHONE : <input type="number" placeholder="number" name="number" required></div>
+                <br>
+                <div>ADDRESS : <textarea placeholder="Address" name="address" cols="100" rows="5"></textarea></div>
+                <br>
+                <hr>
+                <h2><u>PET DETAILS:</u></h2>
+                <span>PET</span>
+
+                <select name="pet_id">
+                    <option value="">select your Pet</option>
+                    <% for (let i = 0; i < data.length; i++) { %>
+                        <option value="<%= data[i].pet_id %>">
+                            <%= data[i].pet_name %>
+                        </option>
+                    <% } %>
+                </select>
+                <br>
+                <br>
+                <div>Reason for Visit : <input type="text" placeholder="Reason" name="reason" required></div>
+                <br>
+                <div>Date Of Appointment : <input type="date" name="date"></div>
+                <br>
+                <button type="submit">BOOK AN APPOINTMENT</button>
+            </form>
+            <%} else { %> <br> <span> Please Add a pet First</span>
+                <form action="/logged/home" method="get">
+                    <button type="submit">Redirect to Home page</button>
+                </form>
+                <% } %>
+
+
+    </div>
+</body>
+
+</html>
